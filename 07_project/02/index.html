@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="code.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+          <h1>BMI</h1>
+            <h1>Calculator</h1>
+          <h2>Body Mass Index</h2>
+      </div>
+      <form>
+          <p><label>Height in CM: </label><input type="text" placeholder="Give some height" id="height"></p>
+          <p><label>Weight in KG: </label><input type="text" placeholder="Give some Weight" id="Weight"></p>
+          <button>Calculate</button>
+          <div class="result"></div>
+          <div id="weight-result"></div>
+          <div id="Weight-guide">
+          <p>Severe Thinness: BMI < 16</p>
+          <p>Moderate Thinness: BMI = 16-17</p>
+          <p>Mild Thinness: BMI = 17-18.5</p>
+          <p>Normal: BMI = 18.5-25</p>
+          <p> Overweight: BMI = 25-30</p>
+          <p> Obese Class I: BMI = 30-35</p>
+          <p> Obese Class II: BMI = 35-40</p>
+          <p>Obese Class III: BMI > 40</p>
+          </div>
+      </form>
+      <!-- formula -->
+      <!-- BMI = weight (kg) / height (m)² -->
+  </div>
+  </body>
+</html>

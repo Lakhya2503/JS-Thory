@@ -1,0 +1,32 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+html,body{
+   width: 100%;
+   height: 100%;
+   background-color: #212121;
+}
+
+.center {
+    position: fixed;
+    inset: 0px;
+    width: 12rem;
+    height: 5rem;
+    max-width: 100vw;
+    max-height: 100dvh;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+
+.time{
+    padding:3vh;
+    background-color: orange;
+    margin-top:0.80em;
+    border-radius: 10px;
+    color: #fff;
+}
