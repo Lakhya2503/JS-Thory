@@ -17,6 +17,8 @@
 //---------------------------------------------------//
 // swping
 
+// method 1
+/*
 let ageOne = 24;
 let ageTwo = 26;
 let ageThree;
@@ -26,9 +28,30 @@ console.log("befor : ", {
     ageTwo
 })
 
-ageThree = ageOne;
-ageOne = ageTwo;
-ageTwo = ageThree;
+ageThree = ageOne; ageThree = 24
+ageOne = ageTwo; ageOne = 26
+ageTwo = ageThree; ageTw0 = 24
+
+console.log("after : ", {
+    ageOne,
+    ageTwo
+})
+*/
+
+// method 1
+
+let ageOne = 24;
+let ageTwo = 26;
+
+console.log("befor : ", {
+    ageOne,
+    ageTwo
+})
+
+
+ageOne = ageOne + ageTwo; // ageOne = 50
+ageTwo = ageOne - ageTwo; // ageTwo = 24
+ageOne = ageOne - ageTwo // ageOne = 26
 
 console.log("after : ", {
     ageOne,
