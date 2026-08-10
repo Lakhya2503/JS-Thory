@@ -33,4 +33,23 @@ console.log(Math.floor(ageOne / 10)) // 3502
 // post decrement a--
 // pre decrement --a
 
+
+/*
+let a = true
+console.log("befor :" , {a})
+a++ // convert into boolean to number
+console.log("after :" , {a})
+*/
+
+/*
+ERRORS
+1.
+let a = 10++;
+
+2.
+let a = 10
+let b = ++(a++) // it converts like ++10
+
+*/
+
 // --------------------------
