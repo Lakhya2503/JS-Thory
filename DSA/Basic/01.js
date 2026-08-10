@@ -8,6 +8,13 @@
 // let age = prompt("what is your age : ") use inspect mode use
 
 //---------------------------------------------------//
+// type casting 
+
+// number to String any type of data type like boolean to string , string to number etc
+// like this operation is called type casting or type convertion
+
+
+//---------------------------------------------------//
 // swping
 
 let ageOne = 24;
