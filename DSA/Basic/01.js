@@ -63,7 +63,7 @@ console.log("after : ", {
 // ------- xxxx -------
 
 // method 3
-
+/*
 let ageOne = 24;
 let ageTwo = 26;
 
@@ -78,3 +78,4 @@ console.log("after : ", {
     ageOne,
     ageTwo
 })
+    */
