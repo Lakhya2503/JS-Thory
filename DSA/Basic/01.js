@@ -38,8 +38,10 @@ console.log("after : ", {
 })
 */
 
-// method 1
+// ------- xxxx -------
 
+// method 2
+/*
 let ageOne = 24;
 let ageTwo = 26;
 
@@ -52,6 +54,25 @@ console.log("befor : ", {
 ageOne = ageOne + ageTwo; // ageOne = 50
 ageTwo = ageOne - ageTwo; // ageTwo = 24
 ageOne = ageOne - ageTwo // ageOne = 26
+
+console.log("after : ", {
+    ageOne,
+    ageTwo
+})
+*/
+// ------- xxxx -------
+
+// method 3
+
+let ageOne = 24;
+let ageTwo = 26;
+
+console.log("befor : ", {
+    ageOne,
+    ageTwo
+});
+
+[ageOne,ageTwo] = [ageTwo,ageOne];
 
 console.log("after : ", {
     ageOne,
