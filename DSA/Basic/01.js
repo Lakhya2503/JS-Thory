@@ -8,4 +8,22 @@
 // let age = prompt("what is your age : ") use inspect mode use
 
 //---------------------------------------------------//
-// 29.30
+// swping
+
+let ageOne = 24;
+let ageTwo = 26;
+let ageThree;
+
+console.log("befor : ", {
+    ageOne,
+    ageTwo
+})
+
+ageThree = ageOne;
+ageOne = ageTwo;
+ageTwo = ageThree;
+
+console.log("after : ", {
+    ageOne,
+    ageTwo
+})
