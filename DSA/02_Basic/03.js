@@ -1,17 +1,9 @@
 // currency Denomination
 
 // 500, 200, 100, 50, 20, 10, 5, 2, 1
-
+/*
 let amount = 1875;
-let fiveHundredNotes = 0;
-let twoHundredNotes = 0;
-let hundredNotes = 0;
-let fiftyRupeesNotes = 0;
-let twentyRupeesNotes = 0;
-let tenRupeesNotes = 0;
-let fiveRupeesCoins = 0;
-let twoRupeesCoins = 0; 
-let oneRupeesCoins = 0;
+
 
 if( amount >= 500 ) {
    console.log(`₹500 Notes : ${Math.floor(amount/500)} 💸`)
@@ -49,3 +41,6 @@ if (amount >= 1) {
     console.log(`₹1 Coin : ${Math.floor(amount/1)} 💸`)
     amount = amount%1
 }
+*/
+
+/ * ========================================================== */;
