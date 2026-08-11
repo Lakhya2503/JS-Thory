@@ -5,6 +5,7 @@
 // 301 to 400 -> 18rs/unit
 // 400 above -> 20rs/unit
 
+/*
 
 let electricityUnit = 400;
 let electricityBill;
@@ -39,6 +40,8 @@ if(400 <= electricityUnit) {
 
 console.log(`Your electricity bill is for ${electricityUnit} units, and your total bill is ₹${electricityBill}.00.`);
 
+*/
 
 
+/* ==================================================================================== */
 
