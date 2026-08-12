@@ -38,7 +38,7 @@ if (amount >= 2) {
     amount = amount%2
 }
 if (amount >= 1) {
-    console.log(`₹1 Coin : ${Math.floor(amount/1)} 💸`)
+    console.log(`₹1 Coin : ${amount} 💸`)
     amount = amount%1
 }
 */
