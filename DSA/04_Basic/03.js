@@ -34,3 +34,23 @@ console.log({ array })
 */
 
 /* ======================================================================== */
+
+// all 0 in left and all 1 in right side
+/*
+let myArray = [ 0,1,0,0,1,0,1,1,0,0,1,0,1,0,1,0 ]
+let i = 0;
+let j = 0;
+
+while( i < myArray.length ) {
+    if( myArray[i] !== 0 ) {
+        let tempopraryArrayElement = myArray[i];
+        myArray[i] = myArray[j];
+        myArray[j] = tempopraryArrayElement;
+        j++;
+    }
+    i++
+}
+
+console.log({ myArray })
+*/
+/* ======================================================================== */
