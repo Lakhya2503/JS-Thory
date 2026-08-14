@@ -40,3 +40,16 @@ for( let i = 0; i <= num; i++ ) { // rows
 }
 */
 /* =========================================================== */
+
+//        +
+//      + +
+//    + + +
+//  + + + +
+ 
+
+for (let i = 0; i <= num; i++) { // rows 
+    for (let j = 0; j <= num; j++) { // columns
+        process.stdout.write(' + ');
+    }
+    console.log()
+}
