@@ -35,4 +35,15 @@ console.log({ myArray })
 
 /* =============================================================== */
 
-// 13.00
+/* Nested Loops */
+
+/*
+for(let i = 1; i <= 5; i++){
+     console.log(`${i}th execution`)
+    for(let j = 1; j <= 5; j++){
+        console.log(`${j}th values of i : ${i} character : ${j}`)
+    }
+}
+*/
+
+/* =============================================================== */
