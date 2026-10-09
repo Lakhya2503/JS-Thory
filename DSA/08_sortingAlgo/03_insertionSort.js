@@ -12,5 +12,5 @@ for (let i = 1; i < lengthOfArray; i++) {
 }
 
 console.log({
-  insertionArray,
+  insertionArray
 });
