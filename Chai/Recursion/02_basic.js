@@ -4,5 +4,4 @@ function printRecursionNumber(lowerNum, upperNum) {
   printRecursionNumber(lowerNum + 1, upperNum);
   console.log("lower Number : ", lowerNum);
 }
-
 printRecursionNumber(1, 5);
