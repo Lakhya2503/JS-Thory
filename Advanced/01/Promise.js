@@ -9,8 +9,6 @@ const promise = new Promise((resolve, reject) => {
 promise.then(() => {
   console.log("Call the .then on promise but use on resolve method");
 });
-
-
 */
 
 /*
