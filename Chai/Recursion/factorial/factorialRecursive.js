@@ -3,7 +3,7 @@ const recursiveFactorial = function (num) {
   return num * recursiveFactorial(num - 1);
 };
 
-const result = recursiveFactorial(4);
+const result = recursiveFactorial(6);
 console.log({
   result,
 });
