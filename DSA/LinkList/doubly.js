@@ -11,6 +11,18 @@ class DoublyLinkList {
     this.head = null;
   }
 
+  insertAtBeg(value) {
+    let temp = new Node(value);
+    if (this.head === null) {
+      this.head = temp;
+      return;
+    } else {
+      temp.next = this.head;
+      this.head.prev = temp;
+      this.head = temp;
+    }
+  }
+
   insertAtEnd(value) {
     let temp = new Node(value);
     if (this.head === null) {
@@ -26,20 +38,22 @@ class DoublyLinkList {
     t.next = temp;
     temp.prev = t;
   }
-
   printDoublyLinkList() {
     let t1 = this.head;
-    while (t1.next !== null) {
-      console.log("HEAD :", t1.data);
+    let output = "";
+
+    while (t1 !== null) {
+      output += t1.data + " <==> ";
       t1 = t1.next;
     }
-    console.log("HEAD :", t1.data);
+
+    console.log("HEAD ==>", output + "NULL");
   }
 }
 
-
-let obj = new DoublyLinkList()
-obj.insertAtEnd(10)
-obj.insertAtEnd(20)
-obj.insertAtEnd(30)
-obj.printDoublyLinkList()
+let obj = new DoublyLinkList();
+obj.insertAtEnd(10);
+obj.insertAtEnd(20);
+obj.insertAtEnd(30);
+obj.insertAtBeg(3);
+obj.printDoublyLinkList();
