@@ -1,3 +1,8 @@
+
+// LIFO
+// Last In First Out
+// push() + pop()
+
 class Stack {
   constructor() {
     this.list = [];
@@ -8,7 +13,7 @@ class Stack {
   }
 
   pushInStack(value) {
-    this.list.unshift(value);
+    this.list.push(value);
   }
 
   isEmptyStack() {
@@ -24,7 +29,7 @@ class Stack {
 
   popTheStack(){
     this.isEmptyStack()
-    return this.list.shift()
+    return this.list.pop()
   }
 
 }
@@ -33,6 +38,9 @@ let stack = new Stack()
 stack.pushInStack(10)
 stack.pushInStack(20)
 stack.pushInStack(30)
-stack.popTheStack()
-stack.popTheStack()
-console.log(stack.peekTheStack())
+
+// console.log(stack.peekTheStack())
+
+console.log(stack.popTheStack())
+console.log(stack.popTheStack())
+console.log(stack.popTheStack())
