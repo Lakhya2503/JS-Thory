@@ -23,6 +23,22 @@ class DoublyLinkList {
     }
   }
 
+  insertionAtMid(value, pos) {
+    let temp = new Node(value);
+    let t = this.head;
+    while (t.next !== null) {
+      if (t.data === pos) {
+        break;
+      } else {
+        t = t.next;
+      }
+      temp.next = t.next;
+      t.next.prev = temp;
+      t.next = temp;
+      temp.prev = t;
+    }
+  }
+
   insertAtEnd(value) {
     let temp = new Node(value);
     if (this.head === null) {
@@ -56,4 +72,5 @@ obj.insertAtEnd(10);
 obj.insertAtEnd(20);
 obj.insertAtEnd(30);
 obj.insertAtBeg(3);
+obj.insertionAtMid(15, 10);
 obj.printDoublyLinkList();
