@@ -54,6 +54,33 @@ class DoublyLinkList {
     t.next = temp;
     temp.prev = t;
   }
+
+  deletenode(value) {
+    if (this.head === null) {
+      console.log("LINK LIST IS EMPTY ....");
+      return;
+    }
+    let t = this.head;
+    if (t.data === value) {
+      this.head = t.next;
+      this.head.prev = null;
+      return;
+    }
+    while (t.next !== null) {
+      if (t.data === value) {
+        t.prev.next = t.next;
+        t.next.prev = t.prev;
+        return;
+      }
+      else {
+        t = t.next;
+      }
+    }
+    if (t.data === value) {
+      t.prev.next = null;
+    }
+  }
+
   printDoublyLinkList() {
     let t1 = this.head;
     let output = "";
@@ -73,4 +100,5 @@ obj.insertAtEnd(20);
 obj.insertAtEnd(30);
 obj.insertAtBeg(3);
 obj.insertionAtMid(15, 10);
+obj.deletenode(15)
 obj.printDoublyLinkList();
