@@ -31,6 +31,24 @@ function inOrder(root) {
   }
 }
 
+function search(root, value) {
+  if (root === null) { 
+    console.log("ELEMENT NOT FOUND 🙁");
+    return;
+  }
+  if (root.data === value) {
+    console.log("ELEMENT FOUND 🥳");
+    return;
+  }
+  // if value is less than current root.data then go with left side
+  if (root.data > value) {
+    search(root.left, value);
+    // else go with right side
+  } else {
+    search(root.right, value);
+  }
+}
+
 // let root = new Node.insertFun(20)
 // root.left = new Node(15)
 // root.right = new Node(30)
@@ -38,11 +56,12 @@ function inOrder(root) {
 // root.left.right = new Node(18)
 // inOrder(root)
 
-let root = insertFun(null, 20);
+let root = insertFun(null, 10);
+root = insertFun(root, 15);
+root = insertFun(root, 8);
+root = insertFun(root, 5);
+root = insertFun(root, 16);
 root = insertFun(root, 30);
-root = insertFun(root, 35);
-root = insertFun(root, 85);
-root = insertFun(root, 96);
-root = insertFun(root, 65);
-root = insertFun(root, 87);
 inOrder(root);
+search(root, 15);
+search(root, 100);
