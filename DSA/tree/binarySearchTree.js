@@ -32,7 +32,7 @@ function inOrder(root) {
 }
 
 function search(root, value) {
-  if (root === null) { 
+  if (root === null) {
     console.log("ELEMENT NOT FOUND 🙁");
     return;
   }
@@ -49,6 +49,40 @@ function search(root, value) {
   }
 }
 
+function getSuccesser(root) {
+  root = root.right;
+  while (root.left !== null) {
+    root = root.left;
+  }
+  return root;
+}
+
+function nodeDelete(root, value) {
+  if (root === null) {
+    return root;
+  }
+
+  if (root.data > value) {
+    root.left = nodeDelete(root.left, value);
+  } else if (root.data < value) {
+    root.right = nodeDelete(root.right, value);
+  } else {
+    // left is node null
+    if (root.left === null) {
+      return root.right;
+    }
+    // right is node null
+    else if (root.right === null) {
+      return root.left;
+    } else {
+      let successor = getSuccesser(root);
+      root.data = successor.data;
+      root.right = nodeDelete(root.right, successor.data);
+    }
+    return root;
+  }
+}
+
 // let root = new Node.insertFun(20)
 // root.left = new Node(15)
 // root.right = new Node(30)
@@ -62,6 +96,10 @@ root = insertFun(root, 8);
 root = insertFun(root, 5);
 root = insertFun(root, 16);
 root = insertFun(root, 30);
+
+inOrder(root, 15);
+console.log();
+nodeDelete(root, 10);
 inOrder(root);
-search(root, 15);
-search(root, 100);
+// sdearch(root, 15);
+// search(root, 100);
